@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Year Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <!--meta info = last updates = 18 feb 2025-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header id="titleBar">
+    <button id="toggleSidebar">
+        <i class="material-icons">menu</i>
+    </button>
+    <h1>First Year Study Portal</h1>
+    <p style="font-size: 12px;margin:10px" id="hitCount"></p>
+</header>
+
+<div class="container">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <ul id="fileList"></ul>
+        <!--<div id="sidebar-resizer"></div>-->
+    </aside>
+
+    <!-- File Viewer -->
+    <main id="viewer" class="viewer">
+        <p id="vp">Select a file to view.</p>
+        <iframe id="fileViewer" style="display: none;"></iframe>
+        <img id="imageViewer" style="display: none; max-width: 100%; height: auto;">
+    </main>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <p style="font-family: Roboto, sans-serif">Made by Anuj Shrivastava - ECE MANIT 1st Year</p>
+</div>
+<div id="notice-panel" class="notice" style="display: none">
+    <div>
+        <button class="close-btn" onclick="closeNotice()">Close</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
